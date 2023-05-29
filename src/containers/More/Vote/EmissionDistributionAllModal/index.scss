@@ -1,0 +1,52 @@
+@import "../../../../assets/scss/style.scss";
+
+.ant-modal {
+  &.emission-modal {
+    .ant-modal-content {
+      padding: 2rem;
+      font-family: "Montserrat";
+      .ant-modal-close {
+        top: 18px;
+        right: 18px;
+        .icon {
+          width: 13px;
+          .dark-mode & {
+            fill: $white;
+          }
+        }
+      }
+      .ant-modal-header {
+        margin-bottom: 1.8rem;
+        .ant-modal-title {
+          font-size: 1.5rem;
+          font-weight: 800;
+        }
+      }
+      .dark-mode & {
+        background: #282441;
+        border: 0;
+        box-shadow: none;
+      }
+      .emission-card {
+        background: none !important;
+        box-shadow: none;
+      }
+      .ant-modal-body {
+        .vote-heading {
+          text-align: center;
+          margin-top: 5px;
+          .dark-mode & {
+            color: white;
+          }
+        }
+        .vote-paira {
+          text-align: center;
+          margin-bottom: 1rem;
+          .dark-mode & {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,151 @@
+@import "../../../assets/scss/variables.scss";
+
+.ant-modal {
+  &.filter-modal {
+    .ant-modal-content {
+      padding: 20px 20px 10px;
+      .ant-modal-body {
+        padding: 0 10px 15px 10px;
+      }
+      .filter-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: $font-size-lg + 1;
+        font-weight: 500;
+        margin-bottom: 10px;
+        .dark-mode & {
+          color: $text-color-white;
+        }
+        .icon {
+          .dark-mode & {
+            fill: $secondary-color;
+          }
+        }
+      }
+      .filter-slider {
+        margin-top: -5px;
+        .ant-slider-mark {
+          top: 12px;
+          width: calc(100% - 38px);
+          left: 10px;
+        }
+        .ant-slider-dot {
+          display: none;
+        }
+        .ant-slider-handle {
+          display: block;
+        }
+        .ant-slider-dot.ant-slider-dot-active {
+          background: $secondary-color;
+        }
+        .ant-slider-track {
+          background: $secondary-color;
+        }
+      }
+      .slider-numbers {
+      }
+      .ant-checkbox-wrapper {
+        margin-right: 6px;
+        font-size: $font-size-base;
+        padding: 0;
+        .ant-checkbox {
+          .ant-checkbox-inner {
+            background: none;
+          }
+          &.ant-checkbox-checked {
+            border-radius: 2px;
+            border-color: $secondary-color;
+            &::after {
+              border-color: $secondary-color;
+            }
+            .dark-mode & {
+              background: $secondary-color;
+              border-color: $secondary-color;
+            }
+            .ant-checkbox-inner {
+              border-color: $secondary-color;
+              &::after {
+                border-color: black;
+              }
+            }
+          }
+        }
+      }
+      .row {
+        padding: 8px 0;
+        align-items: center;
+      }
+      label {
+        padding: 5px 0 8px;
+        .dark-mode & {
+          color: $text-color-label-dark;
+        }
+      }
+      p {
+        text-align: right;
+        margin-bottom: 0;
+        padding: 5px 0;
+        .dark-mode & {
+          color: $white;
+        }
+      }
+      .filter-rows {
+        border-bottom: 1px solid $border-color-base;
+        padding-bottom: 18px;
+        .dark-mode & {
+          border-bottom: 1px solid rgba(#18305a, 0.5);
+        }
+      }
+    }
+  }
+}
+
+.ant-btn {
+  &.filter-btn {
+    border-color: $secondary-color;
+    color: $secondary-color;
+    font-size: $font-size-sm !important;
+    background: none;
+    width: 80px;
+    .icon {
+      width: 8px;
+      margin-right: 3px;
+      fill: $secondary-color;
+    }
+    &:hover,
+    &:focus {
+      border-color: $secondary-color;
+      color: $secondary-color;
+      background: none;
+      opacity: 0.8;
+    }
+  }
+}
+.timer-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -15px;
+  label {
+  }
+
+  .ant-input {
+    height: 28px !important;
+    line-height: 28px !important;
+    border-radius: 4px !important;
+    background: $form-input-bg-light;
+    text-align: right;
+    font-size: $font-size-sm;
+    width: 80px;
+    .dark-mode & {
+      background: $background-dark2;
+    }
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      display: none;
+    }
+    &:hover {
+      border-color: $secondary-color;
+    }
+  }
+}

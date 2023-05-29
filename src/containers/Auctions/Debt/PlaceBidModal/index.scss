@@ -1,0 +1,34 @@
+@import "../../../../assets/scss/style.scss";
+
+.palcebid-modal {
+  .palcebid-modal-inner {
+    .row {
+      align-items: center;
+      padding: 18px 0;
+    }
+    p {
+      font-weight: normal;
+      margin-bottom: 0;
+      font-size: $font-size-lg;
+      .dark-mode & {
+        color: $white;
+      }
+    }
+    label {
+      font-weight: lighter;
+      font-size: $font-size-lg;
+      .dark-mode & {
+        color: $white;
+      }
+    }
+  }
+  .alert-label {
+        color: $error-color;
+    font-size: 12px;
+    .dark-mode & {
+      color: white;
+       color: $error-color;
+    font-size: 12px;
+    }
+  }
+}

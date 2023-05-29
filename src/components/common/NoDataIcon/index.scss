@@ -1,0 +1,45 @@
+@import "../../../assets/scss/variables.scss";
+
+.no-data-card {
+  text-align: center;
+  padding: 20px 15px;
+  font-weight: normal;
+  font-weight: 700;
+  .icon {
+    width: 45px;
+    fill: $secondary-color;
+    .dark-mode & {
+      fill: $white;
+    }
+  }
+  .empty-text {
+    margin-top: 14px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $secondary-color;
+    .dark-mode & {
+      color: $white;
+    }
+  }
+}
+
+.ant-select-dropdown-empty {
+  .no-data-card {
+    text-align: center;
+    padding: 15px 15px;
+    font-weight: normal;
+    .icon {
+      width: 35px;
+      fill: $white;
+    }
+    .empty-text {
+      margin-top: 8px;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 0;
+      .dark-mode & {
+        color: $white;
+      }
+    }
+  }
+}

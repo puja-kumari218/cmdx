@@ -1,0 +1,274 @@
+@import "../../../../assets/scss/style.scss";
+.vault-mint-card {
+  .mint-title {
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 15px;
+    .dark-mode & {
+      color: #fff;
+    }
+  }
+}
+.earn-deposite-card {
+  .card-head {
+    .head-left {
+      font-weight: 600;
+      font-size: 15px;
+      .dark-mode & {
+        color: #fff;
+      }
+    }
+    .liquidation-price-container {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      .svg-icon-inner {
+        .icon {
+          height: 30px;
+          width: 30px;
+          background: $background-select-hover-dark;
+          padding: 2px;
+          border-radius: 50%;
+          .dark-mode & {
+            background: $white;
+          }
+        }
+      }
+      .das {
+        font-weight: 800;
+        height: 2px;
+        width: 10px;
+        margin-top: -3px;
+        background: #000;
+        .dark-mode & {
+          background: white;
+        }
+      }
+      .title {
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: -8px;
+        .dark-mode & {
+          color: white;
+        }
+      }
+      .price {
+        font-weight: 600;
+        margin-left: 5px;
+        margin-top: -8px;
+        font-size: 20px;
+        .dark-mode & {
+          color: white;
+        }
+      }
+    }
+    .oracle-price-container {
+      margin-top: -10px;
+      .title {
+        font-weight: 400;
+        font-size: 16px;
+
+        .dark-mode & {
+          color: white;
+        }
+      }
+      .price {
+        font-weight: 600;
+        font-size: 20px;
+        .dark-mode & {
+          color: white;
+        }
+      }
+    }
+  }
+  .ant-row {
+    @media only screen and (max-width: 980px) {
+      gap: 10px;
+      justify-content: space-between;
+      padding-right: 10px;
+    }
+  }
+  .card-assets-container {
+    display: flex;
+    flex-direction: column;
+    .assets-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      .asset-name {
+        font-weight: 500;
+        .dark-mode & {
+          color: #fff;
+        }
+      }
+      .asset-value {
+        font-weight: 500;
+        .dark-mode & {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .vault-exist-margin {
+    margin-top: 3.5rem;
+  }
+}
+.red-track {
+  .ant-slider-track {
+    background: $error-color !important;
+  }
+  .ant-slider-handle {
+    border-color: $error-color !important;
+    &::after {
+      box-shadow: 0 0 0 2px $error-color;
+    }
+    &:hover {
+      &::after {
+        box-shadow: 0 0 0 2px $error-color;
+      }
+    }
+  }
+}
+.orange-track {
+  .ant-slider-track {
+    background: orange !important;
+  }
+  .ant-slider-handle {
+    border-color: orange !important;
+    &::after {
+      box-shadow: 0 0 0 2px orange;
+    }
+    &:hover {
+      &::after {
+        box-shadow: 0 0 0 2px orange;
+      }
+    }
+  }
+}
+.green-track {
+  .ant-slider-track {
+    background: $secondary-color !important;
+  }
+  .ant-slider-handle {
+    border-color: $secondary-color !important;
+    &::after {
+      box-shadow: 0 0 0 2px $success-color;
+    }
+    &:hover {
+      &::after {
+        box-shadow: 0 0 0 2px $success-color;
+      }
+    }
+  }
+}
+.small-text {
+  font-size: 16px;
+  padding-left: 10px;
+}
+.collateral-deposit-main-box {
+  .collateral-deposit-up-box {
+  }
+  .collateral-deposit-down-box {
+    font-size: 16px;
+  }
+}
+.vault-fee-calculate-main-container-btn {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 8px;
+  .fee-calculate-container-btn {
+    .fee-claim-tx-btn {
+      .ant-btn {
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-size: 0.7rem;
+        letter-spacing: 0.5px;
+        padding: 2px 8px;
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        font-weight: 500;
+        line-height: 0;
+        .dark-mode & {
+          background-color: $secondary-color;
+        }
+        @media only screen and (min-width: 1050px) and (max-width: 1199px) {
+          padding: 10px 8px;
+        }
+      }
+    }
+  }
+}
+.mint-detail-stats-container {
+  .composite-card {
+    .ant-list {
+      .ant-spin-nested-loading {
+        .ant-spin-container {
+          .ant-row {
+            @media only screen and (min-width: 870px) and (max-width: 1049px) {
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.Stable-details-right {
+  width: 100% !important;
+  padding-left: 15px !important;
+  padding: 10px 15px 15px 15px;
+  height: 100%;
+  @media only screen and (max-width: 960px) {
+    height: max-content;
+  }
+  .composite-card {
+    margin-top: 2.3rem;
+    height: 93%;
+    .ant-list {
+      height: 100%;
+      @media only screen and (min-width: 960px) and (max-width: 981px) {
+        height: auto;
+      }
+      .ant-list-item h3 {
+        font-size: 1.3rem !important;
+        @media only screen and (min-width: 1200px) and (max-width: 1430px) {
+          font-size: 1rem !important;
+        }
+        @media only screen and (min-width: 1050px) and (max-width: 1199px) {
+          font-size: 0.8rem !important;
+        }
+      }
+      .ant-spin-nested-loading {
+        height: 100%;
+        .ant-spin-container {
+          height: 100%;
+          .ant-row {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+.mint-custom-skelton {
+  span {
+    margin-left: -5px !important;
+    margin-top: 20px;
+  }
+}
+
+.mint-slider-number {
+  // display: flex;
+  // align-items: flex-end;
+  .non-draggable {
+    height: 4.8px;
+    width: 25%;
+    background-color: #e8e8e8;
+    // border-radius: 4px;
+    margin-right: -1px;
+    margin-bottom: 3px;
+  }
+}

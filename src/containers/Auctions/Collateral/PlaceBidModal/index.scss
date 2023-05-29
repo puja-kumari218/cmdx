@@ -1,0 +1,93 @@
+@import "../../../../assets/scss/style.scss";
+
+.palcebid-modal {
+  .ant-modal-content {
+    .ant-modal-close-x {
+      span {
+        svg {
+          .dark-mode & {
+            fill: white;
+          }
+        }
+      }
+    }
+  }
+  .palcebid-modal-inner {
+    .row {
+      align-items: center;
+      padding: 15px 0;
+    }
+    p {
+      font-weight: normal;
+      margin-bottom: 0;
+      font-size: $font-size-lg;
+      .dark-mode & {
+        color: $white;
+      }
+    }
+    label {
+      font-weight: 300;
+      font-size: $font-size-lg;
+      .dark-mode & {
+        color: $white;
+      }
+    }
+    .ant-input {
+      background: rgba($secondary-color, 0.3);
+      border-color: rgba($secondary-color, 0.3);
+      text-align: right;
+      .dark-mode & {
+        background: $background-dark2;
+        border-color: $background-dark2;
+      }
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        display: none;
+      }
+      .dark-mode & {
+        color: $white;
+
+        &::-webkit-placeholder {
+          color: $white;
+        }
+
+        &::placeholder {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+.input-denom {
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.auction-quantity-max-btn-main-container {
+  position: relative;
+  .auction-quantity-max-btn {
+    position: absolute;
+    top: -46%;
+    right: 7%;
+    button {
+      outline: none;
+      border: 2px solid $secondary-color;
+      color: white;
+      font-size: 11px;
+      padding: 1px 0;
+      margin-left: 4px;
+      line-height: 1;
+      text-align: center;
+      width: 30px;
+      height: 15px;
+      border: 0;
+      cursor: pointer;
+      border-radius: 2px;
+      background: $secondary-color;
+      text-transform: capitalize;
+      .dark-mode & {
+        background: $secondary-color;
+      }
+    }
+  }
+}

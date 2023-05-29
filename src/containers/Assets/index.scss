@@ -1,0 +1,318 @@
+@import "../../assets/scss/variables.scss";
+
+.assets-section {
+  .assets-head {
+    background: $background-light;
+    padding: 15px 25px;
+    border-radius: $base-border-radius;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    box-shadow: $box-shadow-inner-light;
+    color: $text-color-dark2;
+    .dark-mode & {
+      background: $background-dark1;
+      border: 1px solid $border-dark;
+      box-shadow: none;
+      color: $white;
+    }
+    @media screen and (max-width: 540px) {
+      display: block;
+    }
+    h2 {
+      font-weight: 300;
+      margin-bottom: 0;
+      font-size: 1.5rem;
+      color: $text-color-dark2;
+      margin-top: 0;
+      .dark-mode & {
+        color: $white;
+      }
+    }
+    span {
+      color: $text-color-light2;
+      margin-right: 10px;
+      font-size: 0.9rem;
+      .dark-mode & {
+        color: white;
+      }
+    }
+  }
+  .assets-table {
+    tr {
+      td {
+        .ant-btn-sm {
+          padding: 0 15px !important;
+        }
+      }
+    }
+    .assets-withicon {
+      display: flex;
+      align-items: center;
+      .assets-icon {
+        background: $primary-gradient;
+        padding: 1px;
+        width: 38px;
+        height: 38px;
+        border-radius: 38px;
+        margin-right: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icon {
+          width: 100%;
+          height: 100%;
+          border-radius: 38px;
+          padding: 3px;
+          background: $background-light;
+          .dark-mode & {
+            background: $background-dark1;
+          }
+        }
+      }
+    }
+    .lp-token-assets-withicon {
+      justify-content: center;
+    }
+    .assets-table {
+      .assets-withicon {
+        display: flex;
+        align-items: center;
+        .assets-icon {
+          background: $primary-gradient;
+          padding: 1px;
+          width: 38px;
+          height: 38px;
+          border-radius: 38px;
+          margin-right: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .icon {
+            width: 100%;
+            height: 100%;
+            border-radius: 38px;
+            padding: 3px;
+            .dark-mode & {
+              background: $background-dark1;
+            }
+          }
+        }
+      }
+    }
+    .ant-table {
+      .ant-table-content {
+        table {
+          .ant-table-thead {
+            tr {
+              th {
+                font-size: 12px;
+              }
+              td {
+                background: transparent;
+                border: none;
+              }
+            }
+          }
+          .ant-table-tbody {
+            tr {
+              td:nth-child(3) {
+                text-align: center !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .assets-maxhalf {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 4px;
+    cursor: pointer;
+
+    .ant-btn {
+      font-size: $font-size-sm - 1;
+      border-radius: 1px;
+      padding: 1px 0;
+      margin-left: 4px;
+      line-height: 1;
+      text-align: center;
+      width: 30px;
+      height: 15px;
+      border: 0;
+      cursor: pointer;
+
+      .dark-mode & {
+        background: #132239;
+        color: $white;
+      }
+
+      &.active {
+        .dark-mode & {
+          background: $secondary-color;
+        }
+
+        span {
+          .dark-mode & {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hyperlink-icon {
+  .icon {
+    height: 10px;
+  }
+}
+.asset-ibc-btn-container {
+  display: flex !important;
+  align-items: center !important;
+  height: 28px !important;
+  padding: 0 22px !important;
+  line-height: 100% !important;
+  font-size: 11px !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.2px;
+  .asset-ibc-btn {
+    font-size: 18px;
+    margin-left: 6px;
+    margin-right: 1px;
+  }
+  .icon {
+    fill: $white;
+    width: 6px;
+    margin-left: 6px;
+  }
+}
+.total-asset-balance-main-container {
+  display: flex;
+  align-items: center;
+}
+.external-btn {
+  a {
+    color: white !important;
+  }
+}
+.asset-reload-btn {
+  cursor: pointer;
+  svg {
+    font-size: 15px;
+    margin-left: 7px;
+    display: flex;
+  }
+
+  .reload-2 {
+    animation: rotate 1s;
+    transition-duration: 2s;
+    transform-origin: center;
+  }
+  & .reload {
+    transition-duration: 1s;
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.assets-search-section {
+  text-align: right;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  @media screen and (max-width: 576px) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .ant-input-affix-wrapper {
+    border: 1px solid $secondary-color;
+    background: none;
+    border-radius: 30px;
+    margin-left: 25px;
+    height: 39px;
+    padding: 4px 18px;
+    max-width: 260px;
+
+    @media screen and (max-width: 576px) {
+      margin-top: 1.2rem;
+      max-width: 100%;
+      margin-left: 0;
+    }
+
+    &:hover {
+      border-color: $border-light;
+    }
+
+    input {
+      background: none;
+      font-weight: normal;
+
+      .dark-mode & {
+        color: $white;
+      }
+
+      &::placeholder {
+        color: #303950;
+        opacity: 1;
+        font-weight: 500;
+        .dark-mode & {
+          color: white;
+        }
+      }
+    }
+
+    .ant-input-suffix {
+      .icon {
+        fill: $border-dark;
+        .dark-mode & {
+          fill: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .ant-switch {
+    background: #b1b1b1;
+
+    .dark-mode & {
+      background: #b1b1b1;
+    }
+
+    .ant-switch-handle {
+      &:before {
+        background: #ffffff;
+      }
+    }
+
+    &.ant-switch-checked {
+      background: $secondary-color;
+      .dark-mode & {
+        background: $secondary-color;
+      }
+    }
+  }
+}
+
+.ant-tabs {
+  &.assets-tab{
+    .ant-tabs-nav{
+      margin-bottom: 0;
+    }
+  }
+}

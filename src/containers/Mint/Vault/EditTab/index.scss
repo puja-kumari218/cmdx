@@ -1,0 +1,197 @@
+@import "../../../../assets/scss/style.scss";
+.vault-mint-card {
+  .mint-title {
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 15px;
+    .dark-mode & {
+      color: #fff;
+    }
+  }
+}
+.earn-deposite-card {
+  .card-head {
+    .head-left {
+      font-weight: 600;
+      font-size: 15px;
+      .dark-mode & {
+        color: #fff;
+      }
+    }
+  }
+  .card-assets-container {
+    display: flex;
+    flex-direction: column;
+    .assets-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      .asset-name {
+        font-weight: 500;
+        .dark-mode & {
+          color: #fff;
+        }
+      }
+      .asset-value {
+        font-weight: 500;
+        .dark-mode & {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.red-track {
+  .ant-slider-track {
+    background: $error-color !important;
+  }
+  .ant-slider-handle {
+    border-color: $error-color !important;
+  }
+}
+.orange-track {
+  .ant-slider-track {
+    background: orange !important;
+  }
+  .ant-slider-handle {
+    border-color: orange !important;
+  }
+}
+.green-track {
+  .ant-slider-track {
+    background: $secondary-color !important;
+  }
+  .ant-slider-handle {
+    border-color: $secondary-color !important;
+  }
+}
+
+.edit-tab-card {
+  .borrw-content-card {
+    background: transparent;
+    border: none;
+    padding: 0;
+    .borrow-edit-head {
+      max-width: none;
+    }
+    .brrow-edit-form {
+      max-width: none;
+      .ant-input {
+        .dark-mode & {
+          background: $background-dark2;
+        }
+        .dark-mode & {
+          color: $white;
+
+          &::-webkit-placeholder {
+            color: $white;
+          }
+
+          &::placeholder {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  .slider-numbers {
+    // display: flex;
+    .comdex-slider {
+      margin-top: 40px !important;
+    }
+    .slider-input-box-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        font-size: 13px;
+        padding: 0;
+      }
+      .input-box-container {
+        .ant-input {
+          margin-bottom: 0;
+          height: 40px;
+          line-height: 40px;
+          border-radius: 5px;
+          font-weight: 300;
+          max-width: 104px;
+          padding: 0 25px 0 10px;
+          text-align: center;
+          font-size: $font-size-lg + 3;
+          border: none;
+          background: rgba($secondary-color, 0.3);
+
+          &::-webkit-inner-spin-button,
+          &::-webkit-outer-spin-button {
+            display: none;
+            margin: 0;
+          }
+          .dark-mode & {
+            background: rgba($secondary-color, 0.2);
+            border-color: #18305a;
+            color: $white;
+          }
+          .dark-mode & {
+            color: $white;
+
+            &::-webkit-placeholder {
+              color: $white;
+            }
+
+            &::placeholder {
+              color: $white;
+            }
+          }
+        }
+        .collateral-percentage {
+          margin-left: -22px;
+          margin-top: -9px;
+          padding-right: 0;
+          position: relative;
+          font-size: 20px;
+          .dark-mode & {
+            color: $white;
+          }
+        }
+        .liquidation-price {
+          font-size: 1.2rem;
+          font-weight: 600;
+          .dark-mode & {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .alert-label {
+    color: $text-color-light;
+    .dark-mode & {
+      color: #fff;
+    }
+  }
+  .card-bottom-details-main-container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    .estimated_value {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: auto;
+      .title-box {
+        label {
+          text-transform: capitalize;
+          font-weight: 500;
+          font-size: 12px;
+          color: #000;
+          .dark-mode & {
+            color: #fff;
+          }
+        }
+      }
+      .price-box {
+      }
+    }
+  }
+}

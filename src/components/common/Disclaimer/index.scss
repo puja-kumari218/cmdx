@@ -1,0 +1,94 @@
+@import "../../../assets/scss/style.scss";
+
+.disclaimer-modal {
+  .ant-modal-content {
+    padding: 35px !important;
+    .ant-modal-body {
+      padding: 0;
+      .disclaimer-description-text {
+        background: rgba($secondary-color, 0.6);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        padding: 25px 35px;
+        height: 16.4rem;
+        overflow: auto;
+      }
+      h2 {
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+        .dark-mode & {
+          color: $white;
+        }
+      }
+      .disclaimer-description-text p {
+        font-weight: 400;
+        text-align: justify;
+        font-size: 14.5px;
+        margin-bottom: 0;
+        margin: 1rem 0;
+        .dark-mode & {
+          color: $white;
+        }
+        a {
+          // color: $error-color;
+          font-weight: 600;
+        }
+      }
+      h3 {
+        color: $secondary-color;
+        font-size: $font-size-base;
+        margin-top: 15px;
+        margin-bottom: 12px;
+      }
+      .ant-checkbox-wrapper {
+        font-size: $font-size-base;
+        .dark-mode & {
+          color: $white;
+        }
+        .ant-checkbox {
+          &::after {
+            border: 0;
+          }
+          .ant-checkbox-inner {
+            margin-top: -15px;
+            background: none;
+            width: 15px;
+            height: 15px;
+            border-radius: 1px;
+            &::after {
+              border-width: 1px;
+              width: 4.5px;
+              height: 7.2px;
+            }
+          }
+          &.ant-checkbox-checked {
+            .ant-checkbox-inner {
+              background: $secondary-color;
+              border-color: $secondary-color;
+            }
+          }
+        }
+      }
+      .agree-btn {
+        padding-top: 18px;
+        .ant-btn {
+          padding: 0 80px;
+        }
+      }
+    }
+  }
+  .text-center {
+    font-weight: 700;
+  }
+  .border-box {
+    border: 1px solid $white;
+    padding: 0 10px;
+    font-weight: 500;
+    p {
+      font-style: italic;
+      font-weight: 700 !important;
+      letter-spacing: 0.1px;
+    }
+  }
+}

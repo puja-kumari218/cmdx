@@ -1,0 +1,44 @@
+@import "../../../../assets/scss/style.scss";
+
+.palcebid-modal {
+  .palcebid-modal-inner {
+    .row {
+      align-items: center;
+      padding: 18px 0;
+    }
+    p {
+      font-weight: normal;
+      margin-bottom: 0;
+      font-size: $font-size-lg;
+      .dark-mode & {
+        color: $white;
+      }
+    }
+    label {
+      font-weight: lighter;
+      font-size: $font-size-lg;
+      .dark-mode & {
+        color: $white;
+      }
+    }
+  }
+  .ant-modal-content {
+      border-radius: 15px;
+      padding: 10px 30px !important;
+      background: $background-light;
+      box-shadow: $box-shadow-inner-light;
+
+      .dark-mode & {
+        background: $background-dark1;
+        box-shadow: $box-shadow-inner-dark;
+        border: 2px solid $border-dark;
+      }
+
+      .modal-btn {
+        height: 38px;
+        line-height: 38px;
+        padding: 0 55px;
+      }
+    }
+}
+

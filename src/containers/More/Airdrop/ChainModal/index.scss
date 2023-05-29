@@ -1,0 +1,201 @@
+@import "../../../../assets/scss/variables.scss";
+
+.ant-modal {
+  &.claimrewards-modal {
+    .ant-modal-close {
+      top: 30px;
+      right: 32px;
+
+      .icon {
+        fill: #34c7e2;
+      }
+    }
+
+    .check-green {
+      fill: #19865f;
+      width: 13px;
+      margin-left: 0.5rem;
+    }
+
+    .ant-modal-header {
+      padding-top: 2rem;
+      padding-bottom: 0;
+
+      .ant-modal-title {
+        font-weight: 600;
+      }
+      .claim-box-modal-main-head {
+        display: flex;
+        justify-content: space-between;
+        .mission-complete-btn {
+          button {
+            height: 40px;
+            padding: 0 1rem;
+          }
+        }
+      }
+      .title-head {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-transform: uppercase;
+        margin-bottom: 0.8rem;
+        .icons {
+          background: linear-gradient(
+            136.03deg,
+            #2c1476 20.57%,
+            #ce13e7 51.11%,
+            #665aa6 81.33%
+          );
+          padding: 1px;
+          width: 50px;
+          height: 50px;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-right: 10px;
+          .icon-inner {
+            background: #260c44;
+            padding: 7px;
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .ant-modal-content {
+      padding: 0 1rem;
+
+      .dark-mode & {
+        background: #1d1c29;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        border: 0;
+      }
+    }
+
+    .ant-input {
+      height: 55px;
+      border-radius: 8px;
+
+      .dark-mode & {
+        border-color: #41344f;
+        background: #41344f;
+        color: $white;
+      }
+      
+    }
+
+    label {
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+      display: inline-block;
+      font-weight: 600;
+      .dark-mode & {
+        color: $white;
+      }
+    }
+
+    .ant-btn {
+      height: 55px;
+      margin-left: 15px;
+      padding: 0 2rem;
+      border-radius: 55px;
+      min-width: 150px;
+      font-weight: 500;
+      font-size: $font-size-base + 1;
+    }
+    .address-text-container {
+      .dark-mode & {
+        color: white;
+      }
+      .address {
+        display: flex;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        font-size: 15px;
+        color: $secondary-color;
+        align-items: center;
+        .admin-address {
+          margin-left: 10px;
+          font-size: 14px;
+        }
+        .modal-address-copy-icon {
+          margin-left: 10px;
+          margin-top: 2px;
+          .icon {
+            font-size: 13px;
+          }
+        }
+        .lable {
+          .dark-mode & {
+            color: white;
+          }
+        }
+      }
+      .text {
+      }
+    }
+    .error-text {
+      color: #fc6b62;
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+      font-weight: 500;
+      .icon {
+        fill: #fc6b62;
+        margin-right: 8px;
+      }
+    }
+
+    .bottom-text {
+      margin-top: 2rem;
+      .dark-mode & {
+        color: $white;
+      }
+      p {
+        margin-bottom: 0;
+        font-size: 1.2rem;
+      }
+      h2 {
+        font-size: 2rem;
+        .dark-mode & {
+          color: $white;
+        }
+        sub {
+          font-size: 1rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .hr-line {
+    color: #585873;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .line-1 {
+      height: 2px;
+      width: 17.7rem;
+      background-color: #585873;
+    }
+    .text {
+      margin: 0 5px;
+    }
+    .line-2 {
+      height: 2px;
+      width: 17.7rem;
+      background-color: #585873;
+    }
+  }
+}

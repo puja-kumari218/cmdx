@@ -1,0 +1,347 @@
+@import "../../assets/scss/style.scss";
+
+.farm-content-card {
+  background: $background-light;
+  padding: 35px 35px 15px 35px;
+  border-radius: $base-border-radius;
+  box-shadow: $box-shadow-inner-light;
+  position: relative;
+  height: 100%;
+  .dark-mode & {
+    background: $background-dark1;
+    border: 1px solid $border-dark;
+    box-shadow: $box-shadow-inner-dark;
+  }
+  .assets-select-card:nth-child(2) {
+    margin-top: 70px;
+  }
+  .assets-form-btn {
+    margin-top: 60px;
+  }
+}
+
+.farm-content-card-right {
+  background: $background-light;
+  padding: 15px 35px;
+  border-radius: $base-border-radius;
+  box-shadow: $box-shadow-inner-light;
+  position: relative;
+  .dark-mode & {
+    background: $background-dark1;
+    border: 1px solid $border-dark;
+    box-shadow: $box-shadow-inner-dark;
+  }
+  @media screen and (max-width: 991px) {
+    margin-top: 20px;
+  }
+  h3 {
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    .dark-mode & {
+      color: $text-color-light;
+    }
+  }
+
+  .pool-details-upper {
+    display: flex;
+    align-items: center;
+    .pool-details-dlt {
+      line-height: 1;
+      padding-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      h2 {
+        margin-bottom: 0;
+        font-size: $font-size-lg;
+
+        .dark-mode & {
+          color: $white;
+        }
+      }
+      small {
+        color: $text-color-label-dark;
+      }
+    }
+    .pool-details-icon {
+      width: 35px;
+      height: 35px;
+      border-radius: 35px;
+      background: $primary-gradient;
+      padding: 1px;
+      .pool-details-icon-inner {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        background: $white;
+        padding: 5px;
+        .dark-mode & {
+          background: $background-dark1;
+        }
+        .icon {
+          width: 100%;
+          height: 100%;
+          fill: $background-dark1;
+          .dark-mode & {
+            fill: $white;
+          }
+        }
+      }
+    }
+  }
+  .pool-details-list {
+    label {
+      font-size: $font-size-sm - 1;
+      color: $text-color-light;
+      margin-bottom: 0;
+      line-height: 1;
+    }
+    p {
+      margin-bottom: 0;
+      line-height: 1;
+      font-size: $font-size-base;
+    }
+  }
+  &.your-details-card {
+    margin-top: 2.1rem !important;
+    .slider-numbers {
+      .ant-slider {
+        &.comdex-slider {
+          margin-top: 6px;
+          padding-right: 15px;
+          .ant-slider-dot {
+            display: none;
+          }
+          .ant-slider-mark {
+            top: 16px;
+          }
+        }
+      }
+      h3 {
+        font-size: $font-size-base;
+        .dark-mode & {
+          color: $white !important;
+        }
+      }
+      .ant-input {
+        margin-bottom: 0;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 5px;
+        font-weight: 300;
+        padding: 0 0;
+        margin-top: -10px;
+        max-width: 35px;
+        text-align: center;
+        font-size: $font-size-lg + 3;
+        background-color: transparent;
+        border: none;
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+          display: none;
+          margin: 0;
+        }
+        .dark-mode & {
+          background: transparent;
+          border-color: #18305a;
+          color: $white;
+        }
+        .dark-mode & {
+          color: $white;
+
+          &::-webkit-placeholder {
+            color: $white;
+          }
+
+          &::placeholder {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.alert-label {
+  font-size: 11px;
+  color: $error-color;
+  height: 11px;
+  visibility: visible;
+  margin-bottom: 4px;
+  width: 100%;
+  .dark-mode & {
+  }
+}
+
+.alert-hidden {
+  height: 11px;
+  visibility: hidden;
+}
+
+.farm-modal-tab {
+  .farm-content-card {
+    box-shadow: none;
+    padding: 35px 0px 15px 0px;
+    .dark-mode & {
+      box-shadow: none;
+      border: none !important;
+    }
+  }
+  @media (min-width: 992px) {
+    .col-lg-6 {
+      flex: 0 0 50%;
+      max-width: 100%;
+    }
+  }
+  .col-md-12,
+  .col-lg-6 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.farm-asset-icon-container {
+  background: none !important;
+  border: 0 !important;
+  height: 40px;
+  min-width: 140px;
+  padding-left: 0;
+  box-shadow: none !important;
+  .select-inner {
+    height: 100%;
+    .svg-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 40px;
+      background: $primary-gradient;
+      padding: 1px;
+      margin-right: 15px;
+      .svg-icon-inner {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 6px;
+        background: $white;
+        .dark-mode & {
+          background: $background-dark1;
+        }
+        .icon {
+          width: 100%;
+          height: 100%;
+          fill: $background-dark1;
+          border-radius: 50%;
+          .dark-mode & {
+            fill: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pools-heading {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  .dark-mode & {
+    color: $text-color-light;
+  }
+}
+.fartm-pool-modal {
+  .ant-modal-content {
+    padding: 20px 30px !important;
+  }
+}
+
+.slider-numbers {
+  display: flex;
+  .ant-slider {
+    &.comdex-slider {
+      margin-top: 6px;
+      padding-right: 15px;
+      .ant-slider-dot {
+        display: none;
+      }
+      .ant-slider-mark {
+        top: 16px;
+      }
+    }
+  }
+  h3 {
+    font-size: $font-size-base;
+    .dark-mode & {
+      color: $white !important;
+    }
+  }
+  .ant-input {
+    margin-bottom: 0;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    font-weight: 300;
+    margin-top: -14px;
+    max-width: 70px;
+    padding: 0 25px 0 10px;
+    text-align: center;
+    font-size: 19px;
+    border: none;
+    background: #081938 !important;
+    margin-left: 10px;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      display: none;
+      margin: 0;
+    }
+    .dark-mode & {
+      background: transparent;
+      border-color: #18305a;
+      color: $white;
+    }
+    .dark-mode & {
+      color: $white;
+
+      &::-webkit-placeholder {
+        color: $white;
+      }
+
+      &::placeholder {
+        color: $white;
+      }
+    }
+  }
+}
+.availabe-balance {
+  position: absolute;
+  right: 25px;
+  font-size: $font-size-sm;
+  .dark-mode & {
+    color: $white;
+  }
+  span {
+    color: $secondary-color;
+  }
+}
+.percent-text {
+  margin-left: 6px;
+  margin-top: -5px;
+  .dark-mode & {
+    color: $text-color-light;
+  }
+}
+.pools-containor-main-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .pools-bottom-section {
+    height: 10rem;
+  }
+  .pools-upper-section {
+    margin-top: 2.5rem;
+    .pool-dashboard-card-section {
+      padding: 0 15px;
+    }
+  }
+}

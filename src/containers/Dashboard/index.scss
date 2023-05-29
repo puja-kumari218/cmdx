@@ -1,0 +1,348 @@
+@import "../../assets/scss/style.scss";
+.dashboard-app-content-wrapper {
+  margin-top: -10px !important;
+}
+.dashboard-upper {
+  display: flex;
+  @media only screen and (max-width: 750px) {
+    flex-direction: column;
+  }
+  .dashboard-upper-left {
+    width: 50%;
+    @media only screen and (max-width: 750px) {
+      width: 100%;
+    }
+    .composite-card {
+      padding: 32px 30px 30px 30px;
+    }
+    .totalvalues {
+      display: flex;
+      align-items: center;
+      column-gap: 80px;
+
+      @media only screen and (min-width: 950px) and (max-width: 1200px) {
+        column-gap: 40px;
+      }
+      @media only screen and (min-width: 800px) and (max-width: 949px) {
+        column-gap: 10px;
+      }
+      @media only screen and (max-width: 500px) {
+        flex-direction: column;
+      }
+      .totalvalues-chart {
+        width: 50%;
+        text-align: left;
+        .totalvalue-chart {
+          .highcharts-empty-series {
+            fill: #c0c0c0;
+          }
+        }
+      }
+      .totalvalues-right {
+        width: 48%;
+        @media only screen and (max-width: 750px) {
+        }
+        @media only screen and (max-width: 500px) {
+          display: flex;
+          width: 100%;
+          // justify-content: space-between;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  .dashboard-upper-right {
+    width: 52%;
+    padding-left: 20px;
+    @media only screen and (max-width: 750px) {
+      width: 100%;
+      padding-left: 0;
+      margin: 10px 0;
+    }
+    .dashboard-chart-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .dashboardupper-chart {
+      padding: 7.4px 25px;
+      margin-bottom: 15px;
+      .dashboardupperchart-head {
+        display: flex;
+        justify-content: space-between;
+        .col2,
+        .col3 {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          justify-content: space-between;
+          row-gap: 4px;
+        }
+        small {
+          font-size: 13px;
+          font-weight: 400;
+          @media only screen and (min-width: 750px) and (max-width: 830px) {
+            font-size: 11px;
+          }
+        }
+        h4 {
+          font-size: 22px;
+          font-weight: bold;
+          margin-bottom: 0;
+          .dark-mode & {
+            color: $white;
+          }
+          span {
+            color: $success-color;
+            font-size: $font-size-sm;
+            font-weight: lighter;
+          }
+        }
+        p {
+          font-size: $font-size-base;
+          font-weight: 600;
+          margin-bottom: 0;
+          span {
+            font-weight: 200;
+          }
+        }
+      }
+    }
+    .topthree-assets {
+      padding: 20px;
+      .card-head {
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 15px;
+        font-weight: 500;
+      }
+      .card-content {
+        display: flex;
+        .deposited-list {
+          width: 50%;
+          padding-right: 10%;
+          p {
+            margin-bottom: 5px;
+            font-size: $font-size-lg;
+          }
+          ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            li {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 4px 0;
+              .assets-col {
+                display: flex;
+                align-items: center;
+                width: 40%;
+                .dark-mode & {
+                  color: $white;
+                  font-weight: 500;
+                  font-size: 17px;
+                }
+                .assets-icon {
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 30px;
+                  margin-right: 10px;
+                  .icon {
+                    width: 100%;
+                    height: 30px;
+                  }
+                }
+              }
+              b {
+                color: $text-color-light;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.dashboard-bottom {
+  margin-top: 20px;
+  .composite-card {
+    padding: 15px 20px;
+    .bottom-chart {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      .bottom-chart-left {
+        width: 60%;
+        .legend-custom {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          .legend-deposit {
+            display: flex;
+            align-items: center;
+            color: $background-light;
+            font-weight: lighter;
+            margin-right: 20px;
+            .icon {
+              fill: $success-color;
+              width: 10px;
+              height: 10px;
+              margin-right: 5px;
+            }
+          }
+          .legend-borrow {
+            display: flex;
+            align-items: center;
+            color: $background-light;
+            .icon {
+              fill: $background-light;
+              width: 10px;
+              height: 10px;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+      .bottom-chart-right {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .dashboard-statics {
+          margin: 15px 0 15px;
+        }
+      }
+    }
+  }
+}
+
+.dashboard-statics {
+  border-left: 5px solid$secondary-color;
+  line-height: 1;
+  margin: 0 0 20px;
+  color: $text-color-dark2;
+  padding: 5px 0 5px 15px;
+  @media only screen and (max-width: 500px) {
+    flex-basis: 50%;
+  }
+  .dark-mode & {
+    color: $white;
+  }
+  p {
+    margin-bottom: 0;
+    font-size: 17px;
+  }
+  .total-value {
+    margin-bottom: 0;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+  }
+  h3 {
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 8px;
+    .dark-mode & {
+      color: $white;
+    }
+  }
+  h2 {
+    margin-bottom: 0;
+    font-size: 1.9rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 8px;
+    .dark-mode & {
+      color: $white;
+    }
+  }
+}
+.total-deposit-stats {
+  border-left: 5px solid$secondary-color;
+  line-height: 1;
+  margin: 0 0 30px;
+  color: $text-color-dark2;
+  padding: 5px 0 5px 15px;
+  .dark-mode & {
+    color: $white;
+  }
+}
+.total-dashboard-stats {
+  border-left: 5px solid #bfa9d7;
+  .dark-mode & {
+    border-left: 5px solid #bfa9d7;
+  }
+}
+.total-dashboard-stats-2 {
+  border-left: 5px solid #8e78a5;
+  .dark-mode & {
+    border-left: 5px solid #8e78a5;
+  }
+}
+.others-dashboard-stats {
+  border-left: 5px solid #e0e0e0;
+  @media screen and (max-width: 500px) {
+    height: max-content;
+  }
+  .dark-mode & {
+    border-left: 5px solid #373549;
+  }
+}
+
+.dashboard-banner {
+  background: $background-light;
+  padding: 10px 25px 5px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .dark-mode & {
+    background: $background-dark1;
+    box-shadow: $box-shadow-inner-dark;
+    background-image: url("../../assets/images/dashboard-banner.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media only screen and (min-width: 1800px) {
+      background-size: 100%;
+      height: 14rem;
+    }
+  }
+  .banner-left {
+    width: 100%;
+    h2 {
+      font-size: 2rem;
+      line-height: 1.1;
+      color: #222a49;
+      font-weight: 700;
+      letter-spacing: 1.1px;
+      margin-bottom: 15px;
+      @media screen and (max-width: 1120px) {
+        font-size: 1.3rem;
+      }
+      .dark-mode & {
+        color: $white;
+      }
+      span {
+        color: $secondary-color;
+      }
+    }
+  }
+  .banner-right {
+    max-height: 160px;
+    width: 250px;
+    @media screen and (max-width: 1120px) {
+      max-height: 90px;
+    }
+  }
+}

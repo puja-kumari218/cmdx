@@ -1,0 +1,75 @@
+@import "../../../assets/scss/style.scss";
+
+.custom-table {
+  &.reward-table {
+    .ant-table {
+      .ant-table-thead {
+        tr {
+          th {
+            &.ant-table-cell {
+              &::before {
+                background-color: unset !important;
+              }
+              &.justify-content-center {
+                text-align: center !important;
+              }
+            }
+          }
+        }
+      }
+
+      .ant-table-tbody {
+        tr {
+          height: 3.5rem;
+          td {
+            &.ant-table-cell {
+              &.justify-content-center {
+                text-align: center !important;
+              }
+            }
+          }
+        }
+      }
+
+      .claimed-tag {
+        display: flex;
+        align-items: center;
+
+        .icon {
+          fill: $success-color;
+          width: 16px;
+          height: 16px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+.reward-card {
+  padding: 2.2rem;
+  border-radius: 20px;
+  margin-bottom: 1.85rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .ant-btn {
+    &.ant-btn-primary {
+      background: #3b3079 !important;
+      border-color: #3b3079 !important;
+      padding: 0 30px;
+    }
+  }
+  h2 {
+    margin-bottom: 0.6rem;
+  }
+  p {
+    margin-bottom: 0.6rem;
+    max-width: 700px;
+  }
+}
+
+.incentives-heading {
+  @media only screen and (min-width: 765px) and (max-width: 800px) {
+    font-size: 1.4rem;
+  }
+}

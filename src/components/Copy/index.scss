@@ -1,0 +1,10 @@
+.copy-section {
+  cursor: pointer;
+}
+.copy-tooltip {
+  .ant-tooltip-content {
+    & .ant-tooltip-inner {
+      color: white;
+    }
+  }
+}

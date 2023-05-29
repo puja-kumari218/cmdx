@@ -1,0 +1,318 @@
+@import "../../../assets/scss/style.scss";
+.more-locker-lock-table {
+  .assets-withicon {
+    .assets-icon {
+    }
+    .nft-container {
+      .nft-id {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+        text-align: center;
+      }
+      .name {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .amount {
+    font-size: 1.2rem;
+    font-weight: 400;
+    // margin-bottom: 5px;
+  }
+  .denom {
+    font-size: 0.7rem;
+  }
+  .opening-time-badge {
+    background: rgba($secondary-color, 0.8);
+    color: $white;
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 10px;
+    .dark-mode & {
+      background: rgba($secondary-color, 0.3);
+    }
+  }
+}
+
+.locker-create-main-wrapper {
+  max-width: 42%;
+  width: 100%;
+  margin: auto;
+  margin-top: 1rem;
+  @media only screen and (min-width: 960px) and (max-width: 1200px) {
+    max-width: 70%;
+  }
+  @media only screen and (min-width: 700px) and (max-width: 960px) {
+    max-width: 60%;
+  }
+  @media only screen and (min-width: 570px) and (max-width: 700px) {
+    max-width: 80%;
+  }
+  @media only screen and (max-width: 570px) {
+    max-width: 90%;
+  }
+  @media only screen and (max-width: 480px) {
+    max-width: 100%;
+  }
+  .locker-main-container {
+    .locker-title {
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .amount-available-main-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 0rem 0.7rem 0.7rem 0.7rem;
+      @media only screen and (min-width: 570px) and (max-width: 750px) {
+        display: block;
+      }
+      @media only screen and (max-width: 450px) {
+        display: block;
+      }
+      .amount-container {
+        font-size: 1.1rem;
+        font-weight: 500;
+        .dark-mode & {
+          color: #8c8c94;
+        }
+      }
+      .available-container {
+        .label-right {
+          display: flex;
+          font-size: 1.01rem;
+          font-weight: 400;
+          @media only screen and (max-width: 450px) {
+            font-size: 0.8rem;
+          }
+          .dark-mode & {
+            color: $white;
+          }
+          span {
+            width: max-content;
+            .dark-mode & {
+              color: $text-color-light;
+            }
+          }
+          .maxhalf {
+            display: flex;
+            align-items: center;
+            margin-left: 4px;
+
+            .ant-btn {
+              font-size: $font-size-sm - 1;
+              padding: 1px 0;
+              margin-left: 4px;
+              line-height: 1;
+              text-align: center;
+              width: 30px;
+              height: 15px;
+              border: 0;
+              cursor: pointer;
+              border-radius: 2px;
+              text-transform: capitalize;
+              background: $secondary-color;
+              .dark-mode & {
+                background: #132239;
+                color: $white;
+              }
+              &:hover {
+                color: white;
+                .dark-mode & {
+                }
+              }
+              &.active {
+                .dark-mode & {
+                  background: $secondary-color;
+                }
+
+                span {
+                  .dark-mode & {
+                    color: $white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .assets-select-card {
+      display: block;
+      min-height: auto;
+      .assets-right {
+        @media only screen and (max-width: 480px) {
+          margin: 0;
+        }
+        .input-select {
+          text-align: left;
+          width: 100%;
+          input {
+            margin: 0;
+            max-width: none;
+            text-align: left;
+            font-weight: 700;
+            &:focus {
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+    .assets-poolSelect-btn {
+      .assets-form-btn {
+        margin-top: 20px;
+        button {
+          font-weight: 600;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+.radio-input-main-container {
+  .assets-right {
+    .input-select {
+      margin-left: 2%;
+      .ant-radio-inner {
+        height: 1.5rem;
+        width: 1.5rem;
+        position: relative;
+        &::after {
+          width: 26px;
+          height: 26px;
+          margin-top: -13px;
+          margin-left: -13px;
+        }
+      }
+      .ant-radio-wrapper {
+        font-size: 1.2rem;
+        font-weight: 500;
+        align-items: flex-start;
+        .dark-mode & {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.voting-main-container {
+  .voting-title {
+    .dark-mode & {
+      color: white;
+    }
+  }
+  .value-main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .dark-mode & {
+      color: white;
+    }
+    .harbor-value {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    .harbor-locked-value {
+      width: 40%;
+      text-align: right;
+    }
+  }
+}
+.lock-summery-main-container {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1rem 0rem 1rem 0.5rem;
+  .lock-summery-container {
+    margin-bottom: 13px;
+    font-weight: 600;
+    font-family: "Montserrat";
+    .dark-mode & {
+      color: white;
+    }
+  }
+  .rewards-calculator-main-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-weight: 500;
+    font-family: "Montserrat";
+    column-gap: 2rem;
+    .dark-mode & {
+      color: white;
+    }
+
+    .reward-value-common-class {
+    }
+    .reward-value-1 {
+    }
+    .reward-value-2 {
+    }
+    .reward-value-3 {
+    }
+    .reward-value-4 {
+    }
+  }
+}
+
+.locker-up-main-container {
+  .locker-up-container {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    .claim-container {
+      display: flex;
+      align-items: center;
+      margin-right: 5px;
+      .claim-btn {
+        margin-top: 3px;
+      }
+      .claim-value {
+        display: flex;
+        border: 2px solid rgba($secondary-color, 0.3);
+        border-radius: 20px;
+        align-items: center;
+        column-gap: 1rem;
+        padding: 0px 20px;
+        .dark-mode & {
+          border: 2px solid white;
+        }
+        .icon {
+          height: 2.2rem;
+        }
+        .value {
+          font-weight: 400;
+          .dark-mode & {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+.more-locker-tab {
+  .more-locker-tab-back-btn {
+    @media only screen and (max-width: 840px) {
+      display: none !important;
+    }
+  }
+  .ant-tabs-nav {
+    @media only screen and (max-width: 840px) {
+      display: block !important;
+    }
+    .ant-tabs-extra-content {
+      @media only screen and (max-width: 840px) {
+        margin: 0.5rem 0 0 1rem !important;
+      }
+      .row {
+        @media only screen and (max-width: 840px) {
+          row-gap: 0.6rem;
+        }
+        @media only screen and (max-width: 400px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../../assets/scss/style.scss";
+.vault-content-wrapper {
+  .vault-back-btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.stableMint-tab-main-container {
+  position: relative;
+  width: 100%;
+  .stableMint-back-button-container {
+    position: absolute;
+    top: 0;
+    right: 1%;
+    @media only screen and (max-width: 960px) {
+      right: 4%;
+    }
+    @media only screen and (max-width: 500px) {
+      display: none;
+    }
+  }
+}

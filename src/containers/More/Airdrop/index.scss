@@ -1,0 +1,533 @@
+@import "../../../assets/scss/variables.scss";
+
+.time-left-head {
+  border: 1px solid #c5b2db;
+  background-color: #c5b2db;
+  border-radius: 30px;
+  max-width: 480px;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin: -4rem auto 2rem auto;
+  @media screen and (max-width: 991px) {
+    margin: 1rem auto 1rem auto;
+  }
+  .left-text {
+    font-weight: 300;
+    margin-right: 1.2rem;
+  }
+  b {
+    font-weight: 600;
+  }
+  span {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+  .dark-mode & {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+  }
+}
+
+.airdrop-upper {
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  // grid-gap: 1rem;
+  .col-xl-4 {
+    @media screen and (max-width: 1200px) {
+      padding-bottom: 20px;
+    }
+  }
+  .airdrop-upper-card {
+    border-radius: 20px;
+    padding: 1.5rem;
+    background: $assets-bg-light;
+    box-shadow: $box-shadow-inner-light;
+    height: 100%;
+    .dark-mode & {
+      background: rgba($black, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: none;
+    }
+    &.airdrop-upper-card1 {
+      .total-airdrop {
+        margin-top: 1.5rem;
+        p {
+          text-align: center;
+          margin-bottom: 0;
+          font-weight: 500;
+        }
+        .total-supply {
+          color: black;
+          .dark-mode & {
+            color: white;
+          }
+        }
+      }
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 800;
+        .dark-mode & {
+          color: $white;
+        }
+      }
+      .airdrop-statics {
+        border-left: 5px solid $secondary-color;
+        line-height: 1;
+        margin: 0 0 20px;
+        color: $text-color-dark2;
+        padding: 5px 0 5px 15px;
+        position: relative;
+        z-index: 1;
+        .dark-mode & {
+          color: $white;
+        }
+        sub {
+          font-size: 14px;
+          margin-top: -5px;
+        }
+        p {
+          margin-bottom: 0;
+          font-size: 17px;
+        }
+        .total-value {
+          margin-bottom: 0;
+          font-size: 17px;
+        }
+        h3 {
+          margin-bottom: 0;
+          font-size: 1.4rem;
+          font-weight: 600;
+          line-height: 1;
+          margin-top: 8px;
+          .dark-mode & {
+            color: $white;
+          }
+        }
+        h2 {
+          margin-bottom: 0;
+          font-size: 1.9rem;
+          font-weight: 600;
+          line-height: 1;
+          margin-top: 8px;
+          .dark-mode & {
+            color: $white;
+          }
+        }
+      }
+    }
+    &.airdrop-upper-card2 {
+      display: flex;
+      flex-direction: column;
+      h3 {
+        font-size: 1.05rem;
+        margin-bottom: 1.9rem;
+        font-weight: 600;
+        .dark-mode & {
+          color: $white;
+        }
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 1.5rem;
+        place-items: flex-end;
+        li {
+          text-align: center;
+          grid-column: span 3;
+          .icons {
+            background: linear-gradient(
+              136.03deg,
+              #2c1476 20.57%,
+              #ce13e7 51.11%,
+              #665aa6 81.33%
+            );
+            padding: 1px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            .icon-inner {
+              background: #260c44;
+              padding: 7px;
+              width: 100%;
+              height: 100%;
+              border-radius: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              img {
+                width: 100%;
+              }
+            }
+          }
+          p {
+            text-align: center;
+            margin-bottom: 0;
+            font-size: $font-size-base;
+            margin-top: 0.3rem;
+          }
+          &:nth-last-child(n + 3) {
+            grid-column: span 2;
+          }
+        }
+      }
+      .ant-btn-primary {
+        background: rgba(197, 202, 233, 0.1);
+        border: 1px solid rgba(197, 202, 233, 0.3);
+        border-radius: 10px;
+        width: 100%;
+        max-width: 400px;
+        min-height: 42px;
+        padding: 0 8px;
+        line-height: 1.3;
+        margin: 0.3rem auto auto auto;
+        white-space: break-spaces;
+        height: auto;
+      }
+    }
+    &.airdrop-upper-card3 {
+      h3 {
+        font-size: 1.05rem;
+        margin-bottom: 1.2rem;
+        font-weight: 600;
+        .dark-mode & {
+          color: $white;
+        }
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+        li {
+          text-align: center;
+          display: inline-block;
+          min-width: 20%;
+          padding: 0.5rem 0;
+          .icons {
+            background: linear-gradient(
+              136.03deg,
+              #2c1476 20.57%,
+              #ce13e7 51.11%,
+              #665aa6 81.33%
+            );
+            padding: 1px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            @media screen and (max-width: 1600px) {
+              width: 45px;
+              height: 45px;
+              border-radius: 45px;
+            }
+            .icon-inner {
+              background: #260c44;
+              padding: 7px;
+              width: 100%;
+              height: 100%;
+              border-radius: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              img {
+                width: 100%;
+              }
+            }
+          }
+          p {
+            text-align: center;
+            margin-bottom: 0;
+            font-size: $font-size-base;
+            margin-top: 0.3rem;
+            @media screen and (max-width: 1600px) {
+              font-size: $font-size-sm;
+            }
+          }
+          &:nth-last-child(n + 3) {
+            grid-column: span 2;
+          }
+          &.group-li {
+            width: 40%;
+            .icon-group {
+              display: flex;
+              justify-content: center;
+              max-width: 100px;
+              margin: auto;
+              .icons {
+                &:last-child {
+                  margin-left: -20px;
+                }
+              }
+            }
+          }
+          &.group-li-40 {
+            width: 40%;
+            .icon-group {
+              display: flex;
+              justify-content: center;
+              max-width: 100px;
+              margin: auto;
+              .icons {
+                &:last-child {
+                  margin-left: -20px;
+                }
+              }
+            }
+          }
+          &.pool-group-width {
+            width: 33%;
+          }
+          &.pool-group-width-2 {
+            width: 26%;
+          }
+        }
+      }
+      .ant-btn-primary {
+        background: rgba(197, 202, 233, 0.1);
+        border: 1px solid rgba(197, 202, 233, 0.3);
+        border-radius: 10px;
+        width: 100%;
+        max-width: 400px;
+        height: 42px;
+        margin: 1rem auto auto auto;
+        @media screen and (max-width: 1500px) {
+          padding: 0 5px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+.airdrop-bottom {
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  // grid-gap: 1.5rem;
+  .airdrop-bottom-card {
+    border-radius: 20px;
+    padding: 1.5rem;
+    background: $assets-bg-light;
+    box-shadow: $box-shadow-inner-light;
+    width: 100%;
+    height: 100%;
+    @media screen and (max-width: 1600px) {
+      padding: 1rem 1.5rem;
+    }
+    .dark-mode & {
+      background: rgba($black, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: none;
+    }
+    &.airdrop-bottom-card1 {
+      margin-top: 1.5rem;
+      @media screen and (max-width: 991px) {
+        margin-top: 0;
+      }
+      h2 {
+        font-size: 1.488rem;
+        font-weight: 800;
+        @media screen and (max-width: 1600px) {
+          font-size: 1.288rem;
+        }
+        .dark-mode & {
+          color: $white;
+        }
+      }
+      .airdrop-statics {
+        border-left: 5px solid $secondary-color;
+        line-height: 1;
+        margin: 0 0 20px;
+        color: $text-color-dark2;
+        padding: 5px 0 5px 15px;
+        .dark-mode & {
+          color: $white;
+        }
+        sub {
+          font-size: 14px;
+          margin-top: -5px;
+        }
+        p {
+          margin-bottom: 0;
+          font-size: 17px;
+        }
+        .total-value {
+          margin-bottom: 0;
+          font-size: 17px;
+        }
+        h3 {
+          margin-bottom: 0;
+          font-size: 1.4rem;
+          font-weight: 600;
+          line-height: 1;
+          margin-top: 8px;
+          .dark-mode & {
+            color: $white;
+          }
+        }
+        h2 {
+          margin-bottom: 0;
+          font-size: 1.9rem;
+          font-weight: 600;
+          line-height: 1;
+          margin-top: 8px;
+          .dark-mode & {
+            color: $white;
+          }
+        }
+      }
+    }
+    &.airdrop-bottom-card2 {
+      grid-column: span 2;
+      margin-top: 1.5rem;
+      padding: 1.5rem;
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      .airdrop-bottom-card2-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        @media screen and (max-width: 767px) {
+          display: block;
+        }
+        img {
+          @media screen and (max-width: 1600px) {
+            max-width: 350px;
+          }
+        }
+      }
+      .card-bg {
+        position: absolute;
+        width: 100%;
+        min-height: 100%;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        top: 0;
+      }
+      h1 {
+        font-weight: 800;
+        color: $white;
+        @media screen and (max-width: 1600px) {
+          font-size: 1.3rem;
+        }
+        span {
+          color: #d2bbe0;
+        }
+      }
+      .ant-btn {
+        padding: 0 2rem;
+      }
+    }
+  }
+}
+.different-chain-eligibility {
+  background-color: transparent !important;
+  border-color: $secondary-color !important;
+  cursor: auto !important;
+  &:hover {
+    background-color: transparent !important;
+  }
+}
+.allChain-mission-btn-container {
+  display: flex;
+  column-gap: 10px;
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+  .mission-btn {
+    background-color: $secondary-color !important;
+  }
+  .ant-btn {
+    @media screen and (max-width: 480px) {
+      width: 100%;
+    }
+  }
+}
+
+.eligiblity-inner-modal-title {
+  h2 {
+    text-align: center;
+    .dark-mode & {
+      color: white;
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 20px;
+    .dark-mode & {
+      color: white;
+    }
+  }
+}
+
+.share-btn-main-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  column-gap: 1rem;
+  .airdrop-share-btn {
+    background-color: $secondary-color;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.eligibility-modal-container-check-container {
+  .ant-modal-content {
+    padding: 30px 30px 10px 30px !important;
+  }
+}
+
+.eligiblity-check-modal-inner-box {
+  h2 {
+    .dark-mode & {
+      color: white;
+    }
+  }
+  .eligibility-check-midal-input-box {
+    .input-box {
+      height: 55px;
+      border-radius: 8px;
+      .dark-mode & {
+        border-color: #41344f;
+        background: #41344f;
+        color: #fff;
+      }
+    }
+    .eligibility-check-midal-input-button {
+      height: 55px;
+      margin-left: 15px;
+      padding: 0 2rem;
+      border-radius: 55px;
+      min-width: 150px;
+      font-weight: 500;
+      font-size: 15px;
+    }
+  }
+}

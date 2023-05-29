@@ -1,0 +1,18 @@
+@import "../../../../assets/scss/style.scss";
+
+.ant-modal {
+  &.external-incentives-mdoal {
+    .ant-modal-header {
+      margin-bottom: 0.2rem !important;
+    }
+    .assets-withicon {
+      .assets-icons {
+        .assets-icon {
+          width: 36px !important;
+          height: 36px !important;
+          border-radius: 36px !important;
+        }
+      }
+    }
+  }
+}

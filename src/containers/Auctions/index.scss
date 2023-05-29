@@ -1,0 +1,154 @@
+@import "../../assets/scss/style.scss";
+
+.liquidation-table {
+  .endtime-badge {
+    background: rgba($secondary-color, 0.8);
+    color: $white;
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 10px;
+    .dark-mode & {
+      background: rgba($secondary-color, 0.3);
+    }
+  }
+  .ant-table {
+    .ant-table-body {
+      max-height: 30vh;
+      min-height: 50px;
+    }
+    .assets-withicon {
+      display: flex;
+      align-items: center;
+      .assets-icon {
+        width: 31px;
+        height: 31px;
+        border-radius: 31px;
+        margin-right: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icon {
+          width: 100%;
+          height: 100%;
+          border-radius: 31px;
+          padding: 3px;
+        }
+      }
+    }
+  }
+}
+.title {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 0 1px 10px;
+  .dark-mode & {
+    color: #fff;
+  }
+}
+
+.bidding-bottom-table {
+  table {
+    td:nth-child(2) {
+      display: flex;
+      justify-content: center;
+    }
+    td:nth-child(3) {
+      .assets-withicon {
+        justify-content: flex-start !important;
+      }
+    }
+    .ant-table-tbody {
+      tr {
+        td:nth-child(5) {
+          text-align: center !important;
+        }
+      }
+    }
+  }
+}
+
+.ant-input {
+  color: $text-color-dark2;
+  .dark-mode & {
+    color: $white;
+  }
+}
+
+.biddin-btn {
+  border-radius: $base-border-radius !important;
+  color: $white !important;
+  text-transform: capitalize;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+}
+.bid-btn-placed {
+  border: 1px solid yellow !important;
+  background-color: rgba(255, 255, 0, 0.315) !important;
+  border-radius: $base-border-radius;
+  color: $text-color-dark2 !important;
+  .dark-mode & {
+    border: 1px solid yellow !important;
+    background-color: rgba(255, 255, 0, 0.295) !important;
+    color: white !important;
+  }
+}
+.bid-btn-success {
+  background-color: #cce7de !important;
+  border: 1px solid #02865b !important;
+  color: $text-color-dark2 !important;
+  .dark-mode & {
+    background-color: #19323a !important;
+    color: white !important;
+  }
+}
+.bid-btn-rejected {
+  background-color: #f6d9d9 !important;
+  border: 1px solid #8e353c !important;
+  color: $text-color-dark2 !important;
+  .dark-mode & {
+    background-color: #422234 !important;
+    color: white !important;
+  }
+}
+.bid-btn-completed {
+  // background: $primary-color !important;
+  // border: 2px solid $primary-color !important;
+  border: 1px solid #00b0ff !important;
+  background-color: #cbe7fb !important;
+  color: $text-color-dark2 !important;
+  .dark-mode & {
+    background-color: #19385a !important;
+    color: white !important;
+  }
+}
+.auction-extra-tabs {
+  .ant-tabs-nav {
+    @media only screen and (max-width: 430px) {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+    }
+    .ant-tabs-extra-content {
+      margin: 0.5rem 0 0 1rem;
+    }
+  }
+}
+.auction-extra-tab-btn-relative {
+  position: relative;
+  .auction-extra-tab-btn {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: 999;
+    .locker-up-main-container {
+      .locker-up-container {
+        .claim-container {
+          .claim-btn {
+            margin-top: 1px;
+          }
+        }
+      }
+    }
+  }
+}

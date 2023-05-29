@@ -1,0 +1,318 @@
+@import "../../../../assets/scss/variables.scss";
+
+.mission-table {
+  tr {
+    td {
+      .ant-btn {
+        padding: 0 1.8rem !important;
+      }
+    }
+  }
+
+  .assets-withicon {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.05rem;
+
+    @media screen and (max-width:767px) {
+      font-size: 0.9rem;
+    }
+
+    .left-icon {
+      width: 40px;
+      text-align: center;
+      margin-right: 1rem;
+
+      .icon {
+        fill: #ded0e7;
+        height: 23px;
+        width: 23px;
+      }
+    }
+  }
+
+}
+.mission-claim-main-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  .claimAll-button{
+    margin-right: 1rem;
+  }
+}
+
+.mission-title {
+  font-size: 1.588rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  padding-left: 1.5rem;
+
+  .dark-mode & {
+    color: $white;
+  }
+}
+
+.mission-card {
+  border-radius: 20px;
+  padding: 1.5rem;
+  background: $assets-bg-light;
+  box-shadow: $box-shadow-inner-light;
+
+  .dark-mode & {
+    background: rgba($black, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: none;
+  }
+
+  &.claim-airdrop-card {
+    .claim-airdrop-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h2 {
+        font-weight: 800;
+        font-size: 1.688rem;
+        margin-bottom: 0;
+
+        .dark-mode & {
+          color: $white;
+        }
+      }
+
+      .head-right {
+        border: 1px solid #c5b2db;
+        border-radius: 30px;
+        padding: 0.5rem 1.5rem;
+        font-weight: 600;
+
+        span {
+          font-weight: 300;
+        }
+      }
+    }
+
+    .airdrop-statics {
+      border-left: 5px solid $secondary-color;
+      line-height: 1;
+      margin: 1.5rem 0 1.3rem;
+      color: $text-color-dark2;
+      padding: 5px 0 5px 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .dark-mode & {
+        color: $white;
+      }
+
+      sub {
+        font-size: 14px;
+        margin-top: -5px;
+      }
+
+      p {
+        margin-bottom: 0;
+        font-size: 17px;
+      }
+
+      .total-value {
+        margin-bottom: 0;
+        font-size: 17px;
+        @media screen and (max-width: 1600px) {
+          font-size: $font-size-base - 2;
+        }
+        .icon {
+          @media screen and (max-width: 1600px) {
+            width: 12px;
+            margin-bottom: -2px;
+          }
+        }
+      }
+
+      h3 {
+        margin-bottom: 0;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 1;
+        margin-top: 8px;
+
+        .dark-mode & {
+          color: $white;
+        }
+      }
+
+      h2 {
+        margin-bottom: 0;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1;
+        margin-top: 8px;
+
+        .dark-mode & {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &.progress-card {
+    height: 100%;
+
+    .progress-airdrop-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h2 {
+        font-size: 1.688rem;
+        font-weight: 800;
+
+        .dark-mode & {
+          color: $white;
+        }
+      }
+
+      .head-right {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+    }
+
+    .ant-steps {
+      .ant-steps-item {
+        .ant-steps-item-container {
+          .ant-steps-item-tail {
+            padding-left: 0;
+            padding-right: 0;
+            &::after {
+              height: 6px;
+            }
+          }
+          .ant-steps-item-icon {
+            width: 25px;
+            height: 26px;
+            font-size: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .ant-steps-icon {
+              width: 17px;
+              height: 17px;
+              min-width: 17px;
+              border-radius: 17px;
+              border: 2px solid #9974b2;
+              display: inline-block;
+            }
+          }
+          .ant-steps-item-content {
+            .ant-steps-item-title {
+              background: #d2cee7;
+              box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1);
+              border-radius: 26px;
+              color: #261c5c;
+              font-weight: 700;
+              font-size: 1rem;
+              height: 31px;
+              line-height: 31px;
+              padding: 0 1.1rem;
+              position: relative;
+              margin-top: 1rem;
+                @media screen and (max-width:576px) {
+                margin-top: 0;
+                margin-left: 0.5rem;
+              }
+              &::before {
+                content: " ";
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-bottom: 5px solid #d2cee7;
+                position: absolute;
+                top: -8px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                  @media screen and (max-width:576px) {
+                  left: -8px;
+                  right: auto;
+                  top: 45%;
+                  transform: rotate(265deg);
+                }
+              }
+            }
+          }
+        }
+        &.ant-steps-item-active {
+          .ant-steps-item-icon {
+            .icon {
+              width: 45px;
+              margin-top: -11px;
+              margin-left: -5px;
+            }
+            .ant-steps-icon {
+              border: 0;
+            }
+          }
+        }
+        &.ant-steps-item-finish {
+          .ant-steps-item-tail {
+            &::after {
+              background: #9974b2;
+            }
+          }
+          .ant-steps-item-icon {
+            background: $white;
+            border-radius: 100%;
+            width: 30px;
+            height: 30px;
+            z-index: 1;
+            position: relative;
+            .ant-steps-icon {
+              border: 0;
+              background: #9974b2;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 18px;
+              height: 18px;
+              .icon {
+                fill: $white;
+                width: 9px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.complete-mission-main-container {
+  @media screen and (max-width:1260px) {
+    display: block !important;
+  }
+  .left-column {
+    width: 45% !important;
+    @media screen and (max-width:1500px) {
+      width: 40% !important;
+    }
+    @media screen and (max-width:1260px) {
+      width: 100% !important;
+    }
+  }
+  .right-column {
+    width: 55% !important;
+    .ant-steps{
+      justify-content: center;
+    }
+    @media screen and (max-width:1500px) {
+      width: 60% !important;
+    }
+    @media screen and (max-width:1260px) {
+      width: 100% !important;
+    }
+  }
+}
