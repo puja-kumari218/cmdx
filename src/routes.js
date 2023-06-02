@@ -22,7 +22,6 @@ import Balances from "./containers/MyHome";
 
 
 const routes = [
-
   {
     path: "/dashboard",
     element: <Dashboard />,

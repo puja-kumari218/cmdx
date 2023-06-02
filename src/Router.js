@@ -3,6 +3,7 @@ import React from "react";
 import routes from "./routes";
 import Dashboard from "./containers/Dashboard";
 import Swap from "./containers/Swap";
+// import Farm from "./containers/Farm";
 
 console.log(routes.path);
 
@@ -14,12 +15,14 @@ const Router = () => {
           <Route
             key={route.path}
             exact
-            element={route.element}
             path={route.path}
+            element={route.element}
+          
           />
         ))}
         {/* <Route exact element={<Dashboard />} path="*" /> */}
         <Route exact element={<Swap />} path="*" />
+        {/* <Route exact element={<Farm />} path="/farm" /> */}
       </Routes>
 
 

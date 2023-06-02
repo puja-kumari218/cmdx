@@ -374,8 +374,8 @@ const Govern = ({
 Govern.propTypes = {
   lang: PropTypes.string.isRequired,
   address: PropTypes.string.isRequired,
-  allProposal: PropTypes.array.isRequired,
-  proposalUpData: PropTypes.array.isRequired,
+  allProposal: PropTypes.string.isRequired,
+  proposalUpData: PropTypes.string.isRequired,
   voteCount: PropTypes.number.isRequired
 };
 

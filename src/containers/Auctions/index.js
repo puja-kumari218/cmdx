@@ -168,7 +168,7 @@ const Auctions = ({
 Auctions.propTypes = {
   lang: PropTypes.string.isRequired,
   setPairs: PropTypes.func.isRequired,
-  auctions: PropTypes.string.isRequired,
+  auctions: PropTypes.object.isRequired,
   auctionsPageSize: PropTypes.number.isRequired,
   auctionsPageNumber: PropTypes.number.isRequired,
 };

@@ -33,7 +33,7 @@ import { decode, iconNameFromDenom } from "../../../utils/string";
 import "../index.scss";
 import ShowAPR from "../ShowAPR";
 import Deposit from "./Deposit";
-import Farm from "./Farm";
+import Farm from "./Farm/index.js";
 import "./index.scss";
 import PoolTokenValue from "./PoolTokenValue";
 import Unfarm from "./Unfarm";

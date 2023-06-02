@@ -52,7 +52,7 @@ const NavTabs = ({ setAccountAddress, lang, setAccountName, onClick }) => {
   return (
     <div className="vertical_tabs">
       <ul className="tabs_content">
-        {tabsList.map((item) => {
+          {tabsList.map((item) => {
           return (
             <li
               key={item.index}

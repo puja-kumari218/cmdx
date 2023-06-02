@@ -7,9 +7,6 @@ export const tabsList = [
     active: "dashboard",
     index: 0,
   },
-
-
-
   {
     name: "My Positions",
     value: "home",
@@ -63,6 +60,7 @@ export const tabsList = [
     name: "c Swap",
   value: "swap",
   langKey: "c_swap",
+  path: "trade",
   route: "trade",
   index: 7,
 
@@ -72,6 +70,7 @@ export const tabsList = [
   name: "Farm",
   value: "farm",
   langKey: "farm",
+  path: "farm",
   route: "farm",
   index: 8,
 },
@@ -81,6 +80,8 @@ export const tabsList = [
   name: "MyHome",
   value: "portfolio",
   langKey: "MyHome",
+  path: "portfolio",
+
   route: "portfolio",
   index: 9,
 },

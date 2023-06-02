@@ -16,6 +16,7 @@ export const MAX_SLIPPAGE_TOLERANCE = 3;
 export const PRICE_DECIMALS = 4;
 
 
+
 export const APP_ID = Number(envConfig?.[app]?.appId);
 
 export const PRODUCT_ID = Number(envConfig?.[app]?.appId);
